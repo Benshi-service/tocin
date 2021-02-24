@@ -40,7 +40,7 @@
     }
 
     #content {
-      display: none;
+/*       display: none; */
     }
   </style>
   <div id="content">
@@ -55,16 +55,16 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
 <script>
-  $(document).ready(function () {
-    let ipArray = ['220.128.139.47', '220.132.45.185', '211.75.213.163', '111.82.117.95', '111.252.28.86']
-    $.getJSON("http://jsonip.com/?callback=?", function (data) {
-      if (ipArray.indexOf(data.ip) > -1) {
-        $('#content').show()
-      } else {
-        $('#content').empty()
-      }
-    });
-  });
+//   $(document).ready(function () {
+//     let ipArray = ['220.128.139.47', '220.132.45.185', '211.75.213.163', '111.82.117.95', '111.252.28.86']
+//     $.getJSON("http://jsonip.com/?callback=?", function (data) {
+//       if (ipArray.indexOf(data.ip) > -1) {
+//         $('#content').show()
+//       } else {
+//         $('#content').empty()
+//       }
+//     });
+//   });
 </script>
 </body>
 
